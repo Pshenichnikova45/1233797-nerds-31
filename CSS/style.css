@@ -1,0 +1,217 @@
+/* Variables */
+
+ :root {
+  --basic-white: #FFFFFF;
+  --basic-delicious: #EEEEEE;
+  --basic-ligth-red: #FB565A;
+  --basic-dark-green: #00CA74;
+  --basic-ligth-amber: #EFC849;
+  --basic-black: #000000;
+  --basic-twilight-light-azure: #283136;
+  --basic-twilight-grey: #444444;
+  --basic-dark-grey: #666666;
+  --basic-ligth-grey: #E1E1E1;
+
+}
+
+/* Global */
+
+body {
+  min-width: 950px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-ligth-red);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-delicious);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-delicious);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h2 {
+  font-size: 24px;
+  line-height: 30px;S
+}
+
+/* Button */
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white)
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-ligth-red);
+  border: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: var(--basic-black);
+}
+
+/* Filters */
+.filter-legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-black);
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: var(--basic-delicious);
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.catalog-catrgory {
+  text-transform: none;
+}
+
+.catalog-item-price .button {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-ligth-red);
+  border-radius: 3px;
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-delicious);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--basic-delicious);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-twilight-grey);
+  background-color: var(--basic-white);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts {
+  color: var(--basic-dark-grey);
+}
+
+.footer-social {
+  text-align: left;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 36px;
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+}
