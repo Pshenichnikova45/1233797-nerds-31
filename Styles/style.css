@@ -57,19 +57,27 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  display: grid;
-  justify-content: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   background-color: var(--basic-delicious);
 }
 
+.basket-navigation {
+  max-width: 155px;
+  list-style: none;
+}
+
 /* Logo */
 
 .main-header-logo {
   order: 0;
-  justify-self: left;
+  justify-content: flex-start;
+  width: 159,87px;
+  height: 65,02px;
 }
 
 .main-header-bar {
@@ -80,14 +88,15 @@ img {
   justify-self: center;
 }
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
-  width: 1159.84px;
-  margin: 0 auto;
-  padding: 0 10px;
+  width: 100%;
+  margin-bottom: 9px;
+  background-color: var(--basic-delicious);
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation {
+  width: 437px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -108,6 +117,9 @@ img {
 /* Features */
 
 .features {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 80px;
   background-color: var(--basic-delicious);
 }
 
@@ -128,10 +140,10 @@ img {
 }
 
 .service-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   column-gap: 100px;
-  margin: 0;
+  margin-bottom: 121px;
   padding: 0;
   list-style: none;
 }
@@ -147,20 +159,20 @@ img {
 /* Index columns */
 
 .index-columns {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  justify-content: space-between;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
-  margin-bottom: 0;
+  margin-bottom: 86px;
   padding: 0;
 
 }
 
 .percent-percent-percent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+ justify-content: space-between;
   column-gap: 42px;
   margin: 0;
   padding: 0;
@@ -197,7 +209,20 @@ img {
 
 /* Breadcrumbs */
 
-.breadcrumbs {
+.site-breadcrumbs {
+  list-style: none;
+}
+
+.main-breadcrumbs-wrapper {
+  order: 0;
+  width: 100%;
+  margin-bottom: 9px;
+  background-color: var(--basic-delicious);
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-breadcrumbs {
   list-style: none;
 }
 
@@ -215,6 +240,9 @@ img {
   color: #000000;
 }
 
+.products {
+  list-style: none;
+}
 /* Filters */
 
 .renge-controls.bar {
@@ -245,7 +273,9 @@ img {
     left: 160px;
   }
 
-.sort li {
+.sort ul {
+  align-items: start-end;
+  flex-direction: row;
   list-style: none;
 }
 
@@ -254,7 +284,7 @@ img {
   line-height: 30px;
 }
 
-.filter ul {
+.filter ul
   list-style: none;
   line-height: 20px;
 }
@@ -267,10 +297,19 @@ img {
 /* Catalog */
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
   list-style: none;
 }
 
 .catalog-item {
+  width: 358px;
+  min-height: 578px;
+  margin-right: 42px;
+  margin-bottom: 32px;
   background-color: var(--basic-delicious);
 }
 
@@ -299,10 +338,10 @@ img {
 /* Sites*/
 
 .sites {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   column-gap: 0;
-  margin: 0;
+  margin-bottom: 67px;
   padding: 0;
   list-style: none;
 }
@@ -310,6 +349,8 @@ img {
 /* Pagination */
 
 .pagination-list {
+  display: flex;
+  justify-content: start;
   list-style: none;
 }
 
@@ -350,8 +391,8 @@ img {
 }
 
 .main-footer .container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: start;
 }
 
 .footer-contacts {
@@ -359,14 +400,14 @@ img {
 }
 
 .footer-social {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+ justify-content: center;
 }
 
 .social-groups {
+  display: flex;
+  justify-content: space-between;
   justify-self: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 9px;
   margin: 0;
   padding: 0;
@@ -374,6 +415,8 @@ img {
 }
 
 .footer-social ul {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
